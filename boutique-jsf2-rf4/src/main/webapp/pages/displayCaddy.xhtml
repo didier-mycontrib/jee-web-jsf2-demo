@@ -1,0 +1,26 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      template="layout/main.xhtml">
+<ui:define name="pageTitle">caddy</ui:define>
+<ui:define name="body">
+    
+<h3>contenu du caddy</h3>
+<br/>
+nombre d'entrées du caddy :  <h:outputText value="#{panierBean.sizeOfCaddy}" />
+<hr/>
+
+<h:dataTable border="1"  value="#{panierBean.mapProdQteKeys}" var="prod" >
+     <h:column>
+         <f:facet name="header"> <f:verbatim>produit</f:verbatim> </f:facet>
+         <h:outputText value="#{prod.label}"/>
+     </h:column>
+     <h:column>
+          <f:facet name="header"> <f:verbatim>quantite</f:verbatim> </f:facet>
+         <h:outputText value="#{panierBean.mapProdQte[prod]}"/>
+     </h:column>
+</h:dataTable>   
+</ui:define>
+</ui:composition>
+

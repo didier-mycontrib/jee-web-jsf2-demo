@@ -1,0 +1,589 @@
+2015-12-03 21:28:26,659 DEBUG main org.dbunit.DefaultOperationListener - closeConnection(connection=org.dbunit.database.DatabaseConnection[schema=null, connection=com.mysql.jdbc.JDBC4Connection@632cfc, super=_databaseConfig=org.dbunit.database.DatabaseConfig[, _propertyMap={http://www.dbunit.org/features/qualifiedTableNames=false, http://www.dbunit.org/properties/tableType=[Ljava.lang.String;@c3ca31, http://www.dbunit.org/properties/fetchSize=100, http://www.dbunit.org/properties/batchSize=100, http://www.dbunit.org/properties/statementFactory=org.dbunit.database.statement.PreparedStatementFactory@1195ee4, http://www.dbunit.org/properties/resultSetTableFactory=org.dbunit.database.CachedResultSetTableFactory@16aca33, http://www.dbunit.org/features/batchedStatements=false, http://www.dbunit.org/features/datatypeWarning=true, http://www.dbunit.org/properties/escapePattern=null, http://www.dbunit.org/features/caseSensitiveTableNames=false, http://www.dbunit.org/properties/datatypeFactory=org.dbunit.dataset.datatype.DefaultDataTypeFactory[_toleratedDeltaMap=org.dbunit.dataset.datatype.ToleratedDeltaMap@1ab988f], http://www.dbunit.org/properties/metadataHandler=org.dbunit.database.DefaultMetadataHandler@1f8469}], _dataSet=AbstractDataSet[_orderedTableNameMap=null]]) - start
+2015-12-03 21:28:26,659 DEBUG main org.dbunit.database.DatabaseConnection - close() - start
+2015-12-03 21:28:26,659 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - setConsumer(consumer) - start
+2015-12-03 21:28:26,659 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - produce() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setLexicalHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@1814b1c, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@c9af2a) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setDeclHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@1814b1c, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@c9af2a) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=dataset, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b004b8) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - startDataSet() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b004b8) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - isLastTable(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - createTableMetaData(tableName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b004b8) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.Columns - getColumns(columnNames=[], columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)]) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - startTable(metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=ref_categorie) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - row(values=DVD2) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - addRow(values=DVD2) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=dataset) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - endTable() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - the final tableMap is: org.dbunit.dataset.OrderedTableNameMap[_tableNames=[Produit], _tableMap={PRODUIT=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]}, _caseSensitiveTableNames=false]
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractDataSet - getTable(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractDataSet - initialize() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.CachedDataSet - createIterator(reversed=false) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - orderedValues() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTableIterator - getTable() - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=numProd) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=label) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=caracteristiques) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=prix) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=categorie) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,665 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,665 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,665 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.persistNewEntity]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745066
+2015-12-03 21:28:26,665 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@2ba524] for JPA transaction
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,665 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,665 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@2ba524] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,665 DEBUG main org.hibernate.engine.spi.ActionQueue - Executing identity-insert immediately
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.SQL - insert into Produit (caracteristiques, ref_categorie, label, prix) values (?, ?, ?, ?)
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.id.IdentifierGeneratorHelper - Natively generated identity: 9
+2015-12-03 21:28:26,680 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,680 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@2ba524]
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,680 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=16.5, label=DVD2, caracteristiques=Les filles d'a cote}
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,712 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@2ba524] after transaction
+2015-12-03 21:28:26,712 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,712 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,712 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.getEntityById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745067
+2015-12-03 21:28:26,712 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@1bb650b] for JPA transaction
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,712 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,712 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@1bb650b] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_2_, produit0_.caracteristiques as caracter2_2_2_, produit0_.ref_categorie as ref5_2_2_, produit0_.label as label2_2_, produit0_.prix as prix2_2_, categorie1_.numero as numero3_0_, categorie1_.label as label3_0_, categorie1_.ref_parent as ref3_3_0_, categorie2_.numero as numero3_1_, categorie2_.label as label3_1_, categorie2_.ref_parent as ref3_3_1_ from Produit produit0_ left outer join Categorie categorie1_ on produit0_.ref_categorie=categorie1_.numero left outer join Categorie categorie2_ on categorie1_.ref_parent=categorie2_.numero where produit0_.numProd=?
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.loader.Loader - Result set row: 0
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.loader.Loader - Result row: null, null, EntityKey[tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@1bb650b]
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=16.5, label=DVD2, caracteristiques=Les filles d'a cote}
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@1bb650b] after transaction
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - setConsumer(consumer) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - produce() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setLexicalHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@8531c2, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@b22fd4) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setDeclHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@8531c2, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@b22fd4) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=dataset, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@9d5dff) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - startDataSet() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@9d5dff) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - isLastTable(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - createTableMetaData(tableName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@9d5dff) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.Columns - getColumns(columnNames=[], columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)]) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - startTable(metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=ref_categorie) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - row(values=DVD2) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - addRow(values=DVD2) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=dataset) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - endTable() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - the final tableMap is: org.dbunit.dataset.OrderedTableNameMap[_tableNames=[Produit], _tableMap={PRODUIT=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]}, _caseSensitiveTableNames=false]
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractDataSet - getTable(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractDataSet - initialize() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.CachedDataSet - createIterator(reversed=false) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - orderedValues() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTableIterator - getTable() - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=numProd) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=label) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=caracteristiques) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=prix) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=categorie) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,727 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,727 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.getEntityById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745067
+2015-12-03 21:28:26,727 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@12f8ab6] for JPA transaction
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,727 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,727 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@12f8ab6] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_2_, produit0_.caracteristiques as caracter2_2_2_, produit0_.ref_categorie as ref5_2_2_, produit0_.label as label2_2_, produit0_.prix as prix2_2_, categorie1_.numero as numero3_0_, categorie1_.label as label3_0_, categorie1_.ref_parent as ref3_3_0_, categorie2_.numero as numero3_1_, categorie2_.label as label3_1_, categorie2_.ref_parent as ref3_3_1_ from Produit produit0_ left outer join Categorie categorie1_ on produit0_.ref_categorie=categorie1_.numero left outer join Categorie categorie2_ on categorie1_.ref_parent=categorie2_.numero where produit0_.numProd=?
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.loader.Loader - Result set row: 0
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.loader.Loader - Result row: null, null, EntityKey[tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@12f8ab6]
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=16.5, label=DVD2, caracteristiques=Les filles d'a cote}
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@12f8ab6] after transaction
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - setConsumer(consumer) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - produce() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setLexicalHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@1a71302, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@d61783) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setDeclHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@1a71302, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@d61783) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=dataset, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1429fac) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - startDataSet() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1429fac) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - isLastTable(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - createTableMetaData(tableName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1429fac) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.Columns - getColumns(columnNames=[], columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)]) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - startTable(metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=ref_categorie) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - row(values=DVD_2) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - addRow(values=DVD_2) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=dataset) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - endTable() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - the final tableMap is: org.dbunit.dataset.OrderedTableNameMap[_tableNames=[Produit], _tableMap={PRODUIT=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]}, _caseSensitiveTableNames=false]
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractDataSet - getTable(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractDataSet - initialize() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.CachedDataSet - createIterator(reversed=false) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - orderedValues() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTableIterator - getTable() - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=numProd) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=label) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=caracteristiques) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=prix) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=categorie) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,743 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,743 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.updateEntity]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745067
+2015-12-03 21:28:26,743 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@e263bf] for JPA transaction
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,743 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,743 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,759 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@e263bf] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_0_, produit0_.caracteristiques as caracter2_2_0_, produit0_.ref_categorie as ref5_2_0_, produit0_.label as label2_0_, produit0_.prix as prix2_0_ from Produit produit0_ where produit0_.numProd=?
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.loader.Loader - Result set row: 0
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.loader.Loader - Result row: EntityKey[tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,759 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,759 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@e263bf]
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=17.5, label=DVD_2, caracteristiques=Les filles d'a cote (volume1)}
+2015-12-03 21:28:26,759 DEBUG main org.hibernate.SQL - update Produit set caracteristiques=?, ref_categorie=?, label=?, prix=? where numProd=?
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@e263bf] after transaction
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,790 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.getEntityById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745067
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@1e25526] for JPA transaction
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,790 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@1e25526] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_2_, produit0_.caracteristiques as caracter2_2_2_, produit0_.ref_categorie as ref5_2_2_, produit0_.label as label2_2_, produit0_.prix as prix2_2_, categorie1_.numero as numero3_0_, categorie1_.label as label3_0_, categorie1_.ref_parent as ref3_3_0_, categorie2_.numero as numero3_1_, categorie2_.label as label3_1_, categorie2_.ref_parent as ref3_3_1_ from Produit produit0_ left outer join Categorie categorie1_ on produit0_.ref_categorie=categorie1_.numero left outer join Categorie categorie2_ on categorie1_.ref_parent=categorie2_.numero where produit0_.numProd=?
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.loader.Loader - Result set row: 0
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.loader.Loader - Result row: null, null, EntityKey[tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,790 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@1e25526]
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,790 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=17.5, label=DVD_2, caracteristiques=Les filles d'a cote (volume1)}
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@1e25526] after transaction
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - setConsumer(consumer) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - produce() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setLexicalHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@b0f763, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@173e12f) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatDtdProducer - setDeclHandler(xmlReader=com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@b0f763, handler=org.dbunit.dataset.xml.FlatXmlProducer$FlatDtdHandler@173e12f) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=dataset, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b1a8f6) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - startDataSet() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - startElement(uri=, localName=, qName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b1a8f6) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - isLastTable(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - createTableMetaData(tableName=Produit, attributes=com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser$AttributesProxy@1b1a8f6) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.Columns - getColumns(columnNames=[], columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)]) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - startTable(metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[]) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=ref_categorie) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - row(values=DVD_2) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - addRow(values=DVD_2) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.xml.FlatXmlProducer - endElement(uri=, localName=, qName=dataset) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getLastTableName() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - endTable() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - endDataSet() - the final tableMap is: org.dbunit.dataset.OrderedTableNameMap[_tableNames=[Produit], _tableMap={PRODUIT=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]}, _caseSensitiveTableNames=false]
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractDataSet - getTable(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractDataSet - initialize() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.CachedDataSet - createIterator(reversed=false) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - orderedValues() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTableIterator - getTable() - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - add(tableName=Produit, object=org.dbunit.dataset.DefaultTable[_metaData=tableName=Produit, columns=[(label, UNKNOWN, nullableUnknown), (prix, UNKNOWN, nullableUnknown), (ref_categorie, UNKNOWN, nullableUnknown), (caracteristiques, UNKNOWN, nullableUnknown)], keys=[], _rowList.size()=1]) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=PRODUIT) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.OrderedTableNameMap - getTableName(tableName=Produit) - end - result=PRODUIT
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=numProd) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=numProd) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=label) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=label) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=caracteristiques) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=caracteristiques) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=prix) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=prix) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.DefaultTable - getValue(row=0, column=categorie) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - assertValidRowIndex(row=0, rowCount=1) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTable - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,805 DEBUG main org.dbunit.dataset.AbstractTableMetaData - getColumnIndex(columnName=categorie) - start
+2015-12-03 21:28:26,805 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.deleteEntity]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745068
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@1a89729] for JPA transaction
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,805 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@1a89729] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_2_, produit0_.caracteristiques as caracter2_2_2_, produit0_.ref_categorie as ref5_2_2_, produit0_.label as label2_2_, produit0_.prix as prix2_2_, categorie1_.numero as numero3_0_, categorie1_.label as label3_0_, categorie1_.ref_parent as ref3_3_0_, categorie2_.numero as numero3_1_, categorie2_.label as label3_1_, categorie2_.ref_parent as ref3_3_1_ from Produit produit0_ left outer join Categorie categorie1_ on produit0_.ref_categorie=categorie1_.numero left outer join Categorie categorie2_ on categorie1_.ref_parent=categorie2_.numero where produit0_.numProd=?
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.loader.Loader - Result set row: 0
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.loader.Loader - Result row: null, null, EntityKey[tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Resolving associations for [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.internal.TwoPhaseLoad - Done materializing entity [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,805 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@1a89729]
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.internal.util.EntityPrinter - Listing entities:
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.internal.util.EntityPrinter - tp.boutique.prod.itf.domain.entity.Produit{categorie=null, numero=9, prix=17.5, label=DVD_2, caracteristiques=Les filles d'a cote (volume1)}
+2015-12-03 21:28:26,805 DEBUG main org.hibernate.SQL - delete from Produit where numProd=?
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,837 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@1a89729] after transaction
+2015-12-03 21:28:26,837 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,837 DEBUG main org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'txManager'
+2015-12-03 21:28:26,837 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.mycontrib.generic.persistence.AbstractGenericDaoJpaImpl.getEntityById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.internal.SessionImpl - Opened session at timestamp: 14491745068
+2015-12-03 21:28:26,837 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@1fb7a32] for JPA transaction
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - begin
+2015-12-03 21:28:26,837 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtaining JDBC connection
+2015-12-03 21:28:26,837 DEBUG main org.springframework.jdbc.datasource.DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost/boutique_db_ex1]
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Obtained JDBC connection
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - initial autocommit status: true
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - disabling autocommit
+2015-12-03 21:28:26,852 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Not exposing JPA transaction [org.hibernate.ejb.EntityManagerImpl@1fb7a32] as JDBC transaction because JpaDialect [org.springframework.orm.jpa.DefaultJpaDialect@18432b] does not support JDBC Connection retrieval
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.loader.Loader - Loading entity: [tp.boutique.prod.itf.domain.entity.Produit#9]
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.SQL - select produit0_.numProd as numProd2_2_, produit0_.caracteristiques as caracter2_2_2_, produit0_.ref_categorie as ref5_2_2_, produit0_.label as label2_2_, produit0_.prix as prix2_2_, categorie1_.numero as numero3_0_, categorie1_.label as label3_0_, categorie1_.ref_parent as ref3_3_0_, categorie2_.numero as numero3_1_, categorie2_.label as label3_1_, categorie2_.ref_parent as ref3_3_1_ from Produit produit0_ left outer join Categorie categorie1_ on produit0_.ref_categorie=categorie1_.numero left outer join Categorie categorie2_ on categorie1_.ref_parent=categorie2_.numero where produit0_.numProd=?
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.internal.StatefulPersistenceContext - Initializing non-lazy collections
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.loader.Loader - Done entity load
+2015-12-03 21:28:26,852 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2015-12-03 21:28:26,852 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@1fb7a32]
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.transaction.spi.AbstractTransactionImpl - committing
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - committed JDBC Connection
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction - re-enabling autocommit
+2015-12-03 21:28:26,852 DEBUG main org.springframework.orm.jpa.JpaTransactionManager - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@1fb7a32] after transaction
+2015-12-03 21:28:26,852 DEBUG main org.springframework.orm.jpa.EntityManagerFactoryUtils - Closing JPA EntityManager
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Releasing JDBC connection
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.jdbc.internal.LogicalConnectionImpl - Released JDBC connection
+2015-12-03 21:28:26,852 DEBUG main org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler - HHH000163: Logical connection releasing its physical connection
+2015-12-03 21:28:26,852 DEBUG main org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test method: context [[TestContext@13efdbf testClass = TestProduitDaoWithGenericAndDbUnit, testInstance = tp.boutique.prod.impl.persistence.dao.test.TestProduitDaoWithGenericAndDbUnit@1d3ab60, testMethod = testGenericDao_CRUD@GenericDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@591fb testClass = TestProduitDaoWithGenericAndDbUnit, locations = '{classpath:/serviceSpringConf.xml, classpath:/dataSourceForTestSpringConf.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], class dirties context [false], class mode [null], method dirties context [false].
+2015-12-03 21:28:26,852 DEBUG main org.springframework.test.context.support.DirtiesContextTestExecutionListener - After test class: context [[TestContext@13efdbf testClass = TestProduitDaoWithGenericAndDbUnit, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@591fb testClass = TestProduitDaoWithGenericAndDbUnit, locations = '{classpath:/serviceSpringConf.xml, classpath:/dataSourceForTestSpringConf.xml}', classes = '{}', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader']]], dirtiesContext [false].
+2015-12-03 21:28:26,852 INFO Thread-2 org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@198378d: startup date [Thu Dec 03 21:28:20 CET 2015]; root of context hierarchy
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+2015-12-03 21:28:26,852 INFO Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@153e23f: defining beans [org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0,myEmf,txManager,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,genericDaoJpaImpl,gestionClientsImpl,gestionProduitsImpl,categorieDaoJpa,clientDaoJpa,produitDaoJpa,myDataSource,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'gestionProduitsImpl': [tp.boutique.prod.impl.domain.service.test.TestGestionProduits]
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'produitDaoJpa': [tp.boutique.prod.impl.persistence.dao.test.TestProduitDaoWithGenericAndDbUnit]
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'gestionClientsImpl': [tp.boutique.prod.impl.domain.service.test.TestGestionClients]
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DefaultListableBeanFactory - Retrieved dependent beans for bean 'clientDaoJpa': [tp.boutique.prod.impl.persistence.dao.test.TestClientDaoWithGenericAndDbUnit]
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.springframework.beans.factory.support.DisposableBeanAdapter - Invoking destroy() on bean with name 'myEmf'
+2015-12-03 21:28:26,852 INFO Thread-2 org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'myPersistenceUnit'
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.hibernate.internal.SessionFactoryImpl - HHH000031: Closing
+2015-12-03 21:28:26,852 DEBUG Thread-2 org.hibernate.ejb.internal.EntityManagerFactoryRegistry - Remove: name=myPersistenceUnit

@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"> 
+	<!-- xmlns:p="http://primefaces.org/ui" -->
+<head> 
+   <title>test_sublist</title> 
+   <LINK rel="stylesheet" href="../css/styles.css" type="text/css" />
+</head>
+<body>
+<f:view> 
+<!-- 
+    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>
+        ***** <br/>    voir plus bas <br/>    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>
+            ***** <br/>    ***** <br/>    voir plus bas <br/>    ***** <br/>    ***** <br/>    ***** <br/>
+                ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>
+                    ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>    voir plus bas <br/>
+                        ***** <br/>    ***** <br/>    ***** <br/>    ***** <br/>
+  -->
+    <hr/>  
+	<h:form> 
+		 <h:inputText size="50" value="#{prodBean.text}" > 
+		      <f:ajax execute="@this" event="keyup" render="rep" />
+            </h:inputText>
+            <h:outputText value="#{prodBean.text}" id="rep"/>
+		
+		<table border="1">
+		<tr><th>Categorie(s)</th>
+		    <th>Produit(s) <br/>(de la categorie selectionnee)</th>
+		    <th>Details <br/>du produit selectionne</th>
+		</tr>
+		<tr>
+          <td> 
+          <h:selectOneListbox value="#{prodBean.categorie}"
+                              valueChangeListener="#{prodBean.onCategorieChange}" >                               
+                                  <f:ajax execute="@this" event="click" render="list_prod" />
+                                  <!--  <p:ajax event="click" update="list_prod,panel_details_prod"/> -->
+                                  <f:selectItems  value="#{prodBean.listeCategories}"/>
+                         </h:selectOneListbox>               
+           </td>
+          <td> 
+             <h:selectOneListbox id="list_prod" value="#{prodBean.produit}" 
+                               valueChangeListener="#{prodBean.onProductChange}" >
+                              <f:ajax execute="@this" event="click" render="panel_details_prod" /> 
+                              <!-- <p:ajax event="click" update="panel_details_prod"/>  -->                                                                     
+                             <f:selectItems  value="#{prodBean.listeProduits}"/>
+               </h:selectOneListbox>                 
+            </td>
+          <td>
+         
+          <h:panelGroup id="panel_details_prod">
+            <h:outputText value="#{prodBean.selectedProd.label}"/> 
+            <h:outputText value="  ,  " />
+            <h:outputText value="#{prodBean.selectedProd.prix}" /> 
+          </h:panelGroup>
+          </td>
+        </tr>
+       </table> 
+	</h:form> 
+</f:view>
+</body>
+</html>

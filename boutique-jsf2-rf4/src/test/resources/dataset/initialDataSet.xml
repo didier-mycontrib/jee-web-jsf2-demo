@@ -1,0 +1,24 @@
+   <dataset>  
+     <!--  <TableName column1Name="value1_ofRow1" column2Name="value2_ofRow1""/>  -->
+     <!--  <TableName column1Name="value1_ofRow2" column2Name="value2_ofRow2""/>  -->
+     <!-- <Table eventuellement sans pkColumn="..." if auto_increment /> -->
+    
+      <Adresse idAdr="1" codePostal="75000"  rue="007 rue elle" ville="Par ici" />
+      
+          
+      <Client numClient="1" nom="Defrance" prenom="didier" dateNaissance="1969-07-11" ref_adressePrincipale="1"
+       password="pwd1"  telephone="0102030405"  email="didier@ici_ou_la" />
+      
+      <Categorie numero="3" label="CD_classique" ref_parent="1" />
+      <Categorie numero="4" label="CD_variete" ref_parent="1" />
+      <Categorie numero="5" label="DVD_film" ref_parent="2" />
+      <Categorie numero="6" label="DVD_serieTV" ref_parent="2" />
+      <Categorie numero="1" label="CD"  /> <!-- en dernier pour pas ref_parent=null partout -->
+      <Categorie numero="2" label="DVD"  /> <!-- en dernier si integrite ref non activee -->
+      
+      
+      <Produit numProd="1"  label="CD1" prix="12"  ref_categorie="3" caracteristiques="Mozart , flute enchantee"/>
+      <Produit numProd="2"  label="CD2" prix="10"  ref_categorie="3" caracteristiques="Vilvaldi , 4 saisons"/>
+      <Produit numProd="3"  label="DVD1" prix="18"  ref_categorie="5" caracteristiques="Pirate des caraibes"/>
+      
+   </dataset>  

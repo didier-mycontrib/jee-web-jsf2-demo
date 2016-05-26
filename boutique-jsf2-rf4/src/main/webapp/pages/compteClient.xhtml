@@ -1,0 +1,16 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="layout/main.xhtml">
+<ui:define name="pageTitle">compteClient</ui:define>
+
+<ui:define name="body">     
+      <h3>compte client</h3>
+	   nom: <h:outputText value="#{clients.client.nom}"/> <br/>
+       prenom: <h:outputText value="#{clients.client.prenom}"/> <br/>
+       ...
+</ui:define>
+</ui:composition>
+</html>

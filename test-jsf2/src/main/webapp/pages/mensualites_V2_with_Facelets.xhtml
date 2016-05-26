@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/templates/common.xhtml">
+<ui:define name="pageTitle">Mensualites emprunt (resultat calcul)</ui:define>
+<ui:define name="pageHeader">Mensualites</ui:define>
+<ui:define name="body">     
+	<f:loadBundle basename="tp.props.myapp.myJsfProp" var="myJsfProperties"/>
+   <h:outputText value="#{myJsfProperties.hello}"/>   
+   <hr/>
+   Pour rembourser un capital de <b><h:outputText value="#{empruntBean.montant}"/></b><br/>
+   sur <b><h:outputText value="#{empruntBean.nbAnnees}"/></b>  ans <br/>
+   avec un taux d'interêt de  <b><h:outputText value="#{empruntBean.taux}"/></b><br/>
+   il faut des mensualités de <b><h:outputText value="#{empruntBean.mensualite}"/></b> 
+   <hr/>
+   <h:outputFormat value="#{myJsfProperties.display_mens}">
+           <f:param value="#{empruntBean.mensualite}"/>
+           <f:param value="Euros"/>
+   </h:outputFormat>
+   <hr/>
+   Affichage via JSP 2 (et non plus h:outputText) : <br/>
+   mensualite = <b> ${empruntBean.mensualite} </b>
+</ui:define>
+</ui:composition>
+</html>

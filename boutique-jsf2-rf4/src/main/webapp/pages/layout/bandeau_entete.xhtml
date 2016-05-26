@@ -1,0 +1,20 @@
+<table border="0" align="center" cellpadding="0" cellspacing="10"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j">
+ <tr>
+ <td><img src="images/camion.PNG" />[<h:outputText value="#{appName}"/>]</td>
+ <td>
+ 
+	<h:form style="display:inline;">
+			mot clef: <h:inputText id="motclef" value="#{searchBean.motClef}" /> 
+			<h:commandButton value="rechercher" action="#{searchBean.doRecherche}"/>
+	</h:form>
+	<h:form>
+		  <h:commandLink action="#{panierBean.display}"><img src="images/panier.PNG" /></h:commandLink>
+    </h:form>
+</td>	
+</tr>
+</table>

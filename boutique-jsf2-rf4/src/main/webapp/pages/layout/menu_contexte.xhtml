@@ -1,0 +1,75 @@
+<h:form style="display:inline;"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j">
+<rich:toolbar>   <!--  rich:toolBar avec richfaces3 et rich:toolbar avec richFaces4 --> 
+    <rich:dropDownMenu> 
+           <!--  l'attribut value de dropDownMenu/RF3 est a remplace par sous balise f:facet name="label"  avec richFaces4 --> 
+          <f:facet name="label"> <h:outputText value="navigations"/> </f:facet> 
+          <rich:menuItem submitMode="none">
+					<h:outputLink value="welcome.jsf">page accueil</h:outputLink>
+			</rich:menuItem>
+			<rich:menuItem submitMode="none">
+					<h:outputLink value="produits.jsf">produits (par categories)</h:outputLink>
+			</rich:menuItem>
+		  <rich:menuSeparator />
+		  <rich:menuItem submitMode="none">
+					<h:outputText value="... (a definir) - #{appName}"/>
+		</rich:menuItem>
+	</rich:dropDownMenu>
+	
+	<!-- 
+	<rich:menuItem submitMode="ajax" value="action_ajax_x" reRender="zone_msg" action="#{commonDataBean.doAjaxActionX}" />
+		  <rich:menuSeparator />
+     <rich:menuItem submitMode="server" value="action_server_y" action="#{commonDataBean.doActionY}" />	
+	 -->
+	
+	<rich:dropDownMenu> 
+	   <f:facet name="label"> <h:outputText value="options"/> </f:facet> 
+           <rich:menuItem submitMode="none">
+					<h:outputLink value="preferences.jsf">preferences</h:outputLink>
+		 </rich:menuItem>
+	</rich:dropDownMenu>
+	<rich:dropDownMenu>
+	  <f:facet name="label"> <h:outputText value="divers"/> </f:facet>  
+           <rich:menuItem submitMode="none">
+					<h:outputText value="... (a definir)"/>
+		 </rich:menuItem>
+	</rich:dropDownMenu>
+    <rich:dropDownMenu> 
+      <f:facet name="label"> <h:outputText value="liens externes"/> </f:facet> 
+         <rich:menuGroup label="JSF2"> <!-- attribut value de menuGroup/RF3 a remplacer par label/RF4  -->
+            <rich:menuItem submitMode="none">
+					<h:outputLink value="http://docs.jboss.org/richfaces/latest_4_2_X/Component_Reference/en-US/html/">richfaces 4.2 component guide</h:outputLink>
+			</rich:menuItem>
+			<rich:menuItem submitMode="none">
+					<h:outputLink value="http://showcase.richfaces.org/">richfaces showcase (demo)</h:outputLink>
+			</rich:menuItem>
+			  <rich:menuItem submitMode="none">
+					<h:outputLink value="http://myfaces.apache.org/">Myfaces (jsf2)</h:outputLink>
+			</rich:menuItem>
+			<rich:menuItem submitMode="none">
+					<h:outputLink value="http://www.primefaces.org/showcase/ui/home.jsf">primeFaces showcase (demo)</h:outputLink>
+			</rich:menuItem>
+			</rich:menuGroup>
+			<rich:menuGroup label="divers">
+       			 <rich:menuItem submitMode="none">
+					<h:outputLink value="http://www.google.fr/">google (recherche)</h:outputLink>
+				</rich:menuItem>
+       		</rich:menuGroup>
+    </rich:dropDownMenu>
+    <rich:dropDownMenu> 
+        <f:facet name="label"> <h:outputText value="aide"/> </f:facet> 
+		 <rich:menuItem submitMode="none">
+					<h:outputLink value="aideUtilisation.jsf">utilisation  #{appName}</h:outputLink>
+		 </rich:menuItem>
+		  <rich:menuSeparator />
+		 <rich:menuItem submitMode="none">
+					<h:outputLink value="aPropos.jsf">A propos de #{appName}</h:outputLink>
+		 </rich:menuItem>
+	</rich:dropDownMenu>
+</rich:toolbar>
+</h:form>  

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view contentType="text/html">
+<ui:insert name="pageMetaData"></ui:insert>
+<h:head>
+	<title><ui:insert name="pageTitle">Page Title</ui:insert></title>
+    <link rel="stylesheet" href="styles/styleA.css" type="text/css" />
+	<style type="text/css">
+	
+	</style>
+</h:head>
+
+<h:body>
+<table style="border:1px solid #CAD6E0"  align="left" cellpadding="0" cellspacing="0" border="0" width="96%">
+<tbody>
+<!--  menu_et_contexte (menuAndContext): -->
+    <tr>
+		<td  align="left" valign="middle" width="100%" >
+			<ui:include src="menu_contexte.xhtml">
+         			<ui:param name="appName" value="boutique"/>
+     		 </ui:include>
+		</td>
+	</tr>	    
+	<!--  petite separation : -->	<tr><td height="1" width="100%" bgcolor="#CAD6E0"></td></tr>	
+	<!--  bandeau_entete (pageHeader): -->
+	<tr>
+		<td class="header" height="62" align="left" valign="middle" width="100%" bgcolor="#E4EBEB">
+			<!-- <ui:insert name="pageHeader">bandeau_entete</ui:insert> -->
+			<ui:include src="bandeau_entete.xhtml">
+         			<ui:param name="appName" value="boutique"/>
+     		 </ui:include>
+		</td>
+	</tr>
+    
+	
+	<!--  corps_principal (body): -->
+	<tr>
+		<td width="100%"  colspan="2">
+			<table width="100%" style="height:150px" align="center" cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				<tr>
+					<td align="center" width="100%" valign="middle">
+					
+					<ui:insert name="body">corps_principal</ui:insert>
+					
+					</td>
+				</tr>
+			</tbody>
+			</table>
+		</td>
+	</tr>	
+	<!--  petite separation : -->	<tr><td colspan="2"  valign="bottom" height="1" width="100%" bgcolor="#CAD6E0"></td></tr>
+	<!--  pied_page (pageFooter): -->
+	<tr>
+		<td class="bottom" height="32" align="center" valign="middle" width="100%" bgcolor="#E4EBEB">
+			 <ui:include src="footer.xhtml">
+         			<ui:param name="appName" value="boutique"/>
+     		 </ui:include>
+		</td>
+	</tr>
+</tbody>
+</table>
+</h:body>
+</f:view>		
+</html>

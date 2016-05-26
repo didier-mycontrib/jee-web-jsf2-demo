@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+	version="2.0">
+	
+	
+	
+ <application>
+      <!--  <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver> --> 
+       <message-bundle>tp.props.myfaces.Messages</message-bundle> 
+</application>
+ 
+
+
+  <application>
+     
+  </application>
+
+  <managed-bean>
+	<managed-bean-name>empruntBean</managed-bean-name>
+	<managed-bean-class>tp.mbean.EmpruntBean</managed-bean-class>
+	<managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+  
+  <managed-bean>
+	<managed-bean-name>prodBean</managed-bean-name>
+	<managed-bean-class>tp.mbean.ProdBean</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  
+  <managed-bean>
+	<managed-bean-name>colorBean</managed-bean-name>
+	<managed-bean-class>tp.mbean.ColorBean</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  
+  <managed-bean>
+	<managed-bean-name>sportBean</managed-bean-name>
+	<managed-bean-class>tp.mbean.SportBean</managed-bean-class>
+	<managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  
+
+  <managed-bean>
+	<managed-bean-name>myCalculController</managed-bean-name>
+	<managed-bean-class>tp.mbean.MyCalculController</managed-bean-class>
+	<managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+       
+       <navigation-rule>
+		<from-view-id>/pages/param_emprunt_V1.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/pages/mensualites_V1.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>retour</from-outcome>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<from-view-id>/pages/param_emprunt_V2.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<!-- <to-view-id>/pages/mensualites_V2.jsp</to-view-id> -->
+			<to-view-id>/pages/mensualites_V2_with_Facelets.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>retour</from-outcome>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<from-view-id>/pages/test_sublist.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/pages/test_sublist.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/pages/param_emprunt_V3.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/pages/mensualites_V2.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>retour</from-outcome>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/pages/param_emprunt_V4.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/pages/mensualites_V2.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>retour</from-outcome>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/pages/param_emprunt_V5.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>ok</from-outcome>
+			<to-view-id>/pages/mensualites_V5.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>ko</from-outcome>
+			<to-view-id>/pages/erreur.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>retour</from-outcome>
+			<to-view-id>/pages/welcome.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/pages/test_listener_and_explicit_manual_validation.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>suite</from-outcome>
+			<to-view-id>/pages/suite.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>

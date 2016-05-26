@@ -1,0 +1,74 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:a4j="http://richfaces.org/a4j"
+      template="layout/main.xhtml">
+<ui:define name="pageTitle">produits (selection)</ui:define>
+<ui:define name="body">
+     <h:form id="f">   
+         <rich:panel header="categories principales de produits" id="idPanelMainCats">     
+         <h:selectOneRadio value="#{catProduits.chooseMainCat}" 
+             valueChangeListener="#{catProduits.mainCatChanged}" > 
+             <f:selectItems  value="#{catProduits.listMainCat}"
+                 var="c" itemValue="#{c.numero}" itemLabel="#{c.label}"/>
+             <a4j:ajax render="idPanelSubCatAndProd" event="click" />            
+         </h:selectOneRadio>
+         </rich:panel>
+         <rich:panel header="sous categories et produits" cellpadding="1px" cellspacing="1px" id="idPanelSubCatAndProd">
+           <h:panelGrid  columns="3"  > 
+              <rich:panel  header="sous categories" width="250px" id="idPanelTree">      
+		         <rich:tree value="#{catProduits.nodesOfCategories}" var="eltNodeCat" width="250px" 
+		          selectionType="ajax" selectionChangeListener="#{catProduits.subCatChanged}">
+					<rich:treeNode >
+						<h:outputText value="#{eltNodeCat}" />
+					</rich:treeNode>
+					<a4j:ajax render="idTableListeProd,idPanelDetails" event="click" />
+				</rich:tree>				
+		      </rich:panel>
+		       <rich:panel  render="idPanelListeProd" header="liste produits" width="250px">  
+			      <rich:dataTable border="1" id="idTableListeProd" value="#{catProduits.listProdOfCurrCat}" var="prod">
+					    <h:column>
+					        <f:facet name="header">  <f:verbatim>num</f:verbatim> </f:facet>
+					        <h:commandLink action="#{catProduits.detaillerProduit}"
+					        value="#{prod.numero}" >
+								<f:param name="paramNumProdSel"
+								value="#{prod.numero}"
+								binding="#{catProduits.paramNumProdSel}" />
+							</h:commandLink>					        					       
+					    </h:column>
+					    <h:column>
+					        <f:facet name="header">  <f:verbatim>label</f:verbatim> </f:facet>
+					        <h:outputText  value="#{prod.label}"/> 					        
+					    </h:column>
+					    <h:column>
+					        <f:facet name="header">  <f:verbatim>prix</f:verbatim> </f:facet>
+					        <h:outputText  value="#{prod.prix}"/> 					        
+					    </h:column>
+			      </rich:dataTable>
+		     </rich:panel>
+		       <rich:panel id="idPanelDetails" header="details produit selectionné" width="250px">  
+		          <h:panelGrid  columns="2"  > 
+		             <h:outputLabel for="idNumCurrProd" value="numero:" /> <h:outputText id="idNumCurrProd" value="#{catProduits.currProd.numero}" />
+		             <h:outputLabel for="idLabelCurrProd" value="label:" /> <h:outputText id="idLabelCurrProd" value="#{catProduits.currProd.label}" />
+		             <h:outputLabel for="idPrixCurrProd" value="prix:" /> <h:outputText id="idPrixCurrProd" value="#{catProduits.currProd.prix}" />
+		              </h:panelGrid>
+		            <h4><u>caracteristiques:</u></h4>
+		            <h:outputText value="#{catProduits.currProd.caracteristiques}" />
+		            <hr/>
+		            <h:commandButton value="ajouter au caddy" action="#{catProduits.addInCaddy}"/> en quantite de <h:selectOneMenu value="#{catProduits.quantite}">	
+		                <f:selectItem itemValue="1" itemLabel="1" />
+		                <f:selectItem itemValue="2" itemLabel="2" />
+		                <f:selectItem itemValue="3" itemLabel="3" />
+		                <f:selectItem itemValue="4" itemLabel="4" />
+		                <f:selectItem itemValue="5" itemLabel="5" />
+		             </h:selectOneMenu>	       
+		       </rich:panel> 
+		   </h:panelGrid>
+          </rich:panel>
+         
+     </h:form>
+</ui:define>
+</ui:composition>
+

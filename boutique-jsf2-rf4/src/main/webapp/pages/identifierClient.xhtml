@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="layout/main.xhtml">
+<ui:define name="pageTitle">identificationClient</ui:define>
+<ui:define name="body">
+    <h3>identification client</h3>     
+	<h:form id="identification">
+	    numClient: <h:inputText id="numClient" value="#{clients.numClient}"/>(ex: 1 ou ...)<br/>
+	    password: <h:inputText id="password" value="#{clients.password}"/>(ex: mypwd ou pwd1 ou ...)<br/>
+	    <h:commandButton value="identification" 
+	                     action="#{clients.identifierClient}"/>
+	</h:form>
+	<font color='red'> <h:messages/> </font> <h:outputText value="#{clients.message}"/>
+</ui:define>
+</ui:composition>
+</html>
